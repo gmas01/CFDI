@@ -1,2 +1,2 @@
 # cfdiengine
-A serverless cfdi engine
+A distributed cfdi engine
