@@ -23,7 +23,7 @@ plugins {
 
 apply plugin: "com.github.johnrengelman.shadow"
 
-description = 'serverless'
+description = 'producer'
 
 dependencies {
 
