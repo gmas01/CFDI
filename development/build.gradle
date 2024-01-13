@@ -3,6 +3,8 @@ description = 'development'
 compileJava.options.encoding = "UTF-8"
 compileTestJava.options.encoding = "UTF-8"
 
+apply plugin: 'application'
+mainClassName = 'xyz.Hello'
 
 dependencies {
     implementation project(':elemental')
