@@ -1,4 +1,4 @@
-package javaapplication2;
+package xyz;
 
 import java.io.File;
 import java.io.FileNotFoundException;
