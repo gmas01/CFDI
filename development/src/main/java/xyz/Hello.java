@@ -1,12 +1,13 @@
 package xyz;
 
+import com.immortalcrab.cfdi.processor.Processor;
 import com.immortalcrab.cfdi.processor.Producer;
-import com.immortalcrab.cfdi.errors.EngineError;
-
+import java.io.File;
 
 public class Hello {
-    public static void main(String[] args) throws EngineError {
-        System.out.println("Hello, World!"); 
-        Producer.obtainSteadyPipeline();
+    public static void main(String[] args) throws Exception {
+        File f = new File(
+            "C:\\Users\\pankaj\\Desktop\\test.txt");
+        Producer.obtainSteadyPipeline().doIssue((Processor.IPayload) new TextFileFromFileSystem(f));
     }
 }
