@@ -8,6 +8,6 @@ public class Hello {
     public static void main(String[] args) throws Exception {
         File f = new File(
             "C:\\Users\\pankaj\\Desktop\\test.txt");
-        Producer.obtainSteadyPipeline().doIssue((Processor.IPayload) new TextFileFromFileSystem(f));
+        Producer.obtainSteadyPipeline().doIssue(new TextFileFromFileSystem(f));
     }
 }
